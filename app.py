@@ -1,3 +1,7 @@
+# Author: Ali Azhari
+# File: app.python
+# Date: 08/23/2022
+
 from rembg import remove
 from PIL import Image
 
