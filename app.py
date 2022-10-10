@@ -5,7 +5,7 @@
 from rembg import remove
 from PIL import Image
 
-# make sure you have the picture "old_pic.jpg" in your folder
+# ****
 
 def remove_bg(input_path):
     try:
