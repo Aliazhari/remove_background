@@ -2,8 +2,17 @@ from rembg import remove
 from PIL import Image
 
 # make sure you have the picture "old_pic.jpg" in your folder
-input_path = 'old_pic.jpg'
-output_path = 'new_pic.png'
-input = Image.open(input_path)
-output = remove(input)
-output.save(output_path)
+
+def remove_bg(input_path):
+    try:
+        output_path = 'new_' + input_path + '.png'
+        inp = Image.open(input_path)
+        output = remove(inp)
+        output.save(output_path)
+    except Exception:
+        print('Something went wrong. Goodbye!!')
+
+
+if __name__ == "__main__":
+    input_path =  input("Enter the pics name's: ")
+    remove_bg(input_path)
